@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script type="text/javascript">
+	//Exracted from http://www.w3schools.com/html/html5_draganddrop.asp
+	function allowDrop(ev) {
+		ev.preventDefault();
+	}
+	
+	function drag(ev) {
+		ev.dataTransfer.setData("text", ev.target.id);
+	}
+	
+	function drop(ev) {
+		ev.preventDefault();
+		var data = ev.dataTransfer.getData("text");
+		ev.target.appendChild(document.getElementById(data));
+	}
+</script>
+<link href="DCT_builder.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="main_container">
+        <div class="mainCol">
+            <h3>HTML tag</h3>
+            <div>
+              <ul>
+                <li draggable="true" ondragstart="drag(event)" id="01"><span>&lt;!DOCTYPE&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="02"><span>&lt;a&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="03"><span>&lt;abbr&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="04"><span>&lt;acronym&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="05"><span>&lt;address&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="06"><span>&lt;applet&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="07"><span>&lt;area&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="07"><span>&lt;article&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="09"><span>&lt;aside&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="50"><span>&lt;audio&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="11"><span>&lt;b&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="12"><span>&lt;base&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="13"><span>&lt;basefont&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="14"><span>&lt;bdi&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="15"><span>&lt;bdo&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="16"><span>&lt;big&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="17"><span>&lt;blockquote&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="18"><span>&lt;body&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="19"><span>&lt;br&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="50"><span>&lt;button&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="21"><span>&lt;canvas&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="22"><span>&lt;caption&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="23"><span>&lt;center&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="24"><span>&lt;cite&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="25"><span>&lt;code&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="26"><span>&lt;col&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="27"><span>&lt;colgroup&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="28"><span>&lt;command&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="29"><span>&lt;datalist&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="50"><span>&lt;dd&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="31"><span>&lt;del&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="32"><span>&lt;details&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="33"><span>&lt;dfn&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="34"><span>&lt;dir&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="35"><span>&lt;div&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="36"><span>&lt;dl&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="37"><span>&lt;dt&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="38"><span>&lt;em&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="39"><span>&lt;embed&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="50"><span>&lt;fieldset&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="41"><span>&lt;figcaption&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="42"><span>&lt;figure&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="43"><span>&lt;font&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="44"><span>&lt;footer&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="45"><span>&lt;form&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="46"><span>&lt;frame&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="47"><span>&lt;frameset&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="48"><span>&lt;h1&gt; - &lt;h6&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="49"><span>&lt;head&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="50"><span>&lt;header&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="51"><span>&lt;hgroup&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="52"><span>&lt;hr&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="53"><span>&lt;html&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="54"><span>&lt;i&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="55"><span>&lt;iframe&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="56"><span>&lt;img&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="57"><span>&lt;input&gt;</span></li>
+                <li draggable="true" ondragstart="drag(event)" id="58"><span>&lt;ins&gt;</span></li>
+              </ul>
+            </div>
+        </div>
+        <div class="mainCol" >
+            <h3>Selected tags</h3>
+            <div style="background-color:#CCC;min-height:100%;">
+            	<ul id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </ul>          
+            </div>
+        </div>
+        <div class="mainCol">&nbsp;</div>
+	</div>        
+</body>
+</html>
