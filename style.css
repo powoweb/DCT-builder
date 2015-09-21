@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+#main_container{
+	}
+.mainCol{
+	float:left;
+	width: 30%;
+	margin-right:10px;
+	height:1170px;
+	border:2px solid #CCC;
+	}
+.mainCol li{
+	list-style:none;
+	}
